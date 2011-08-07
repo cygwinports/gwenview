@@ -1,0 +1,6 @@
+category: Graphics KDE
+requires: kipi-plugins libexiv2_9 libgcc1 libjpeg8 libkdecore5 libkipi8 libkonq5 libphonon4 libQtCore4 libQtGui4 libQtSvg4
+sdesc: "KDE image viewer"
+ldesc: "Gwenview is a simple image viewer for KDE. It features a folder 
+tree window and a file list window to provide easy navigation in your 
+file hierarchy."
