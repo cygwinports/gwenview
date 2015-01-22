@@ -2,7 +2,7 @@ inherit kde4
 
 NAME="gwenview"
 VERSION=4.14.3
-RELEASE=1
+RELEASE=2
 CATEGORY="Graphics"
 SUMMARY="KDE image viewer"
 DESCRIPTION="Gwenview is a simple image viewer for KDE. It features a folder
