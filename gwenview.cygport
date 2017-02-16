@@ -1,12 +1,10 @@
-inherit kde4
+inherit kf5
 
 NAME="gwenview"
-VERSION=4.14.3
-RELEASE=3
+VERSION=16.08.3
+RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="KDE image viewer"
 DESCRIPTION="Gwenview is a simple image viewer for KDE. It features a folder
 tree window and a file list window to provide easy navigation in your file
 hierarchy."
-
-REQUIRES="kde-runtime"
