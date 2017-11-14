@@ -1,10 +1,38 @@
 inherit kf5
 
 NAME="gwenview"
-VERSION=17.04.3
+VERSION=17.08.3
 RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="KDE image viewer"
 DESCRIPTION="Gwenview is a simple image viewer for KDE. It features a folder
 tree window and a file list window to provide easy navigation in your file
 hierarchy."
+
+PKG_NAMES="${NAME} ${NAME}5-part"
+gwenview_CONTENTS="
+	etc/postinstall/gwenview.sh
+	usr/bin/gwenview.exe
+	usr/bin/gwenview_importer.exe
+	usr/share/applications/org.kde.gwenview.desktop
+	usr/share/doc/HTML/*/gwenview/
+	usr/share/doc/${NAME}
+	usr/share/gwenview/
+	usr/share/icons/hicolor/*/actions/document-share.*
+	usr/share/icons/hicolor/*/apps/gwenview.*
+	usr/share/kservices5/ServiceMenus/slideshow.desktop
+	usr/share/kxmlgui5/gwenview/gwenviewui.rc
+	usr/share/locale/*/LC_MESSAGES/gwenview.mo
+	usr/share/metainfo/org.kde.gwenview.appdata.xml
+	usr/share/solid/actions/gwenview_*.desktop
+"
+gwenview5_part_CATEGORY="KDE"
+gwenview5_part_CONTENTS="
+	usr/bin/cyggwenviewlib-5.dll
+	usr/lib/qt5/plugins/gvpart.dll
+	usr/share/kservices5/gvpart.desktop
+	usr/share/kxmlgui5/gvpart/
+"
+PKG_IGNORE="
+	usr/lib/libgwenviewlib.dll.a
+"
