@@ -1,0 +1,11 @@
+--- origsrc/gwenview-17.12.3/lib/imageformats/fitsplugin.h	2018-03-01 17:27:16.000000000 -0600
++++ src/gwenview-17.12.3/lib/imageformats/fitsplugin.h	2018-03-14 16:26:32.818287900 -0500
+@@ -32,7 +32,7 @@ class QStringList;
+ 
+ extern const QStaticPlugin qt_static_plugin_FitsPlugin();
+ 
+-class Q_CORE_EXPORT FitsPlugin : public QImageIOPlugin
++class Q_DECL_EXPORT FitsPlugin : public QImageIOPlugin
+ {
+     Q_OBJECT
+     Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QImageIOHandlerFactoryInterface" FILE "fitsplugin.json")
